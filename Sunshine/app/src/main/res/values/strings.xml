@@ -4,6 +4,11 @@
 
     <string name="app_name">Sunshine</string>
 
+    <string name="error_message">An error has occurred. Please try again by clicking REFRESH</string>
+
+    <!--Used in overflow menu to refresh weather data-->
+    <string name="action_refresh">Refresh</string>
+
     <!-- For labelling today's forecast [CHAR LIMIT=15] -->
     <string name="today">Today</string>
 
