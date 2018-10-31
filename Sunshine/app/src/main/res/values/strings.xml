@@ -2,12 +2,31 @@
 
 <resources xmlns:xliff="http://schemas.android.com/apk/res-auto">
 
+    <!-- - - - - - - - - - - - - -->
+    <!-- Used throughout Sunshine-->
+    <!-- - - - - - - - - - - - - -->
+
+    <!--Used in Action Bar, and in AndroidManifest to tell the device the name of this app.-->
+    <!--It's good to keep this short, so your launcher icon isn't displayed with "The greatest Wea"-->
+    <!--or something similar.-->
     <string name="app_name">Sunshine</string>
 
-    <string name="error_message">An error has occurred. Please try again by clicking REFRESH</string>
+    <!--By convention, "action" denotes that this String will be used as the label for an Action,-->
+    <!--typically from the action bar.  The ActionBar is limited real estate, so shorter is better.-->
+    <string name="action_map">Map Location</string>
+    <string name="action_share">Share</string>
 
     <!--Used in overflow menu to refresh weather data-->
     <string name="action_refresh">Refresh</string>
+
+    <string name="error_message">
+        An error has occurred. Please try again by clicking REFRESH
+    </string>
+
+
+    <!-- - - - - - - - - - - - - -->
+    <!--Used by SunshineDateUtils-->
+    <!-- - - - - - - - - - - - - -->
 
     <!-- For labelling today's forecast [CHAR LIMIT=15] -->
     <string name="today">Today</string>
@@ -19,6 +38,11 @@
     <string name="format_full_friendly_date">
         <xliff:g id="month">%1$s</xliff:g>, <xliff:g id="day">%2$s</xliff:g>
     </string>
+
+
+    <!-- - - - - - - - - - - - - - - -->
+    <!-- Used by SunshineWeatherUtils-->
+    <!-- - - - - - - - - - - - - - - -->
 
     <!-- Temperature format in Celsius [CHAR LIMIT=5] -->
     <string name="format_temperature_celsius">
@@ -99,4 +123,20 @@
     <string name="condition_962">Hurricane</string>
 
     <string name="condition_unknown">Unknown (<xliff:g id="conditionId">%1$d</xliff:g>)</string>
+
+
+    <!-- - - - - - - - - - - -->
+    <!-- Used by NetworkUtils-->
+    <!-- - - - - - - - - - - -->
+    <!--NONE-->
+
+    <!-- - - - - - - - - - - - - - - -->
+    <!-- Used by OpenWeatherJsonUtils-->
+    <!-- - - - - - - - - - - - - - - -->
+    <!--NONE-->
+
+    <!-- - - - - - - - - - - - - - -->
+    <!--Used by SunshinePreferences-->
+    <!-- - - - - - - - - - - - - - -->
+    <!--NONE-->
 </resources>
