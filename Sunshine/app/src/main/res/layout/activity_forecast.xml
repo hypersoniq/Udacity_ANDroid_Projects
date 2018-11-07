@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!-- This layout defines the main screen and will display the list of weather or an error -->
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -6,17 +8,11 @@
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recyclerview_forecast"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingBottom="8dp"/>
 
-    <TextView
-        android:id="@+id/tv_error_message_display"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="16dp"
-        android:text="@string/error_message"
-        android:textSize="20sp"
-        android:visibility="invisible" />
-
+    <!-- A progress bar that will be shown to users to indicate that weather data is loading -->
     <ProgressBar
         android:id="@+id/pb_loading_indicator"
         android:layout_width="42dp"
